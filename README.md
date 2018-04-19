@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/vue-mouseflow.svg?style=flat-square)](https://www.npmjs.com/package/vue-mouseflow)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-> Vue.js plugin to add Mouseflow tracking to your application
+> 📈 Vue.js plugin for Mouseflow tracking
 
 ## Installation
 
@@ -23,10 +23,10 @@ npm install --save vue-mouseflow
 Install the plugin using the `Vue.use` method:
 
 ```js
-import Vue from "vue";
-import VueMouseflow from "vue-mouseflow";
+import Vue from 'vue'
+import VueMouseflow from 'vue-mouseflow'
 
-Vue.use(VueMouseflow, { tracking_key: "your-tracking-key" });
+Vue.use(VueMouseflow, { tracking_key: 'your-tracking-key' })
 ```
 
 ### Router Hook
@@ -39,16 +39,16 @@ Vue.use(VueMouseflow, { tracking_key: "your-tracking-key" });
 
 ```js
 // router.js
-import VueRouter from "vue-router";
-import VueMouseflow from "vue-mouseflow";
+import VueRouter from 'vue-router'
+import VueMouseflow from 'vue-mouseflow'
 
 const router = new VueRouter({
   routes: [
     /* some routes */
   ]
-});
+})
 
 router.afterEach(to => {
-  VueMouseflow.logRouteChange(to, { includeRouteParams: false });
-});
+  VueMouseflow.logRouteChange(to, { includeRouteParams: false })
+})
 ```
