@@ -1,6 +1,6 @@
 {
   "name": "vue-mouseflow",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Vue.js plugin to add Mouseflow tracking to your application",
   "main": "src/index.js",
   "scripts": {
